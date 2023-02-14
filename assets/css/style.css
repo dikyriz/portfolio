@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: #002118;
+}
+
+.logo {
+    color: #5CC1A2;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.logo:hover {
+    color: #068663;
+}
+
+header {
+    height: 48px;
+}
+
+header div {
+    padding: 15px 0;
+}
+
+main {
+    margin-top: 20px;
+}
+
+a.logo {
+    text-decoration: none;
+}
+
+section .title h1 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+section .title h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+section .title h3 {
+    font-size: 11px;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+section .description p {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+section:last-child {
+    background: linear-gradient(327.54deg, #57FFCD -2.42%, rgba(88, 255, 205, 0.199869) 0.58%, rgba(88, 255, 205, 0) 100%);
+    box-shadow: 11px 4px 12px -12px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 20px 10px;
+}
+
+section .about p {
+    font-size: 11px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.btn {
+    background: #3C9E83;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+    color: #E7FFF8;
+    height: 35px;
+    width: 100%;
+}
+
+.card .img {
+    height: 140px;
+}
+
+.project .img {
+    height: 160px;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.project .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.card-container a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.card {
+    background: #145B47;
+    border-radius: 12px;
+    padding: 10px 10px;
+}
+
+.card .description span {
+    color: #E7FFF8;
+    font-size: 9px;
+    font-weight: 200;
+}
+
+.project .card .description h2 {
+    font-size: 14px;
+    color: #E7FFF8;
+    margin: 5px 0;
+}
+
+.project .description h2 {
+    font-size: 20px;
+    color: inherit;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.project .card .description p {
+    font-size: 11px;
+    text-align: justify;
+    color: #E7FFF8;
+    font-weight: 300;
+    margin: 0;
+}
+
+.project .description p {
+    font-size: 16px;
+    text-align: justify;
+    color: inherit;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+}
+
+footer p {
+    font-size: 11px;
+    font-weight: 300;
+}
+
+footer p span {
+    font-weight: 500;
+}
+
+.social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.links ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about p a {
+    color: #068663;
+    text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    body {
+        max-width: 64rem;
+    }
+    section .title h1 {
+        font-size: 1.8rem;
+    }
+    section .title h2 {
+        font-size: 2rem;
+    }
+    section .title h3 {
+        font-size: 1rem;
+    }
+    section .description p {
+        font-size: 1.2rem;
+        max-width: 50%;
+        margin: 1.5rem auto;
+    }
+    section .about .h6 {
+        font-size: 1.6rem;
+    }
+    section .about p {
+        font-size: 1.2rem;
+    }
+    section .about {
+        padding: 0 1rem;
+    }
+    .btn {
+        width: initial;
+    }
+    .project .h6 {
+        font-size: 1.6rem;
+    }
+    .project {
+        padding: 0 1rem;
+    }
+    .project .card .description h2 {
+        font-size: 1.1rem;
+    }
+    .project .card .description p {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+    .project .card .description span {
+        font-size: 0.6rem;
+    }
+    footer h6 {
+        font-size: 1.3rem;
+    }
+    .social ul li a {
+        font-size: 1rem;
+    }
+    .links ul li a {
+        font-size: 1rem;
+    }
+    footer p {
+        font-size: 0.9rem;
+    }
+    .project .card-container {
+        max-width: 45rem;
+        margin: 0 auto;
+    }
+    .project .card-container .col-lg .card {
+        min-height: 23rem;
+    }
+    .project .img-lg {
+        max-width: 40rem;
+        min-height: 20rem;
+        margin: 0 auto;
+    }
+    .project .description p {
+        max-width: 70%;
+    }
+    .about-lg p {
+        max-width: 27rem;
+        margin: 0 auto;
+    }
+}
