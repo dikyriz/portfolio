@@ -5,231 +5,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All projects by Achmad Dicky Rizhaldi — IoT systems and front-end web development.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Projects</title>
+    <title>Projects | Achmad Dicky Rizhaldi</title>
     <link rel="icon" href="../assets/icon/icon-web.png" type="image/icon type">
 </head>
 
-<body class="mx-auto">
-    <header class="border-bottom border-light ">
-        <div class="container-fluid">
-            <a href="../index.html" class="logo">dikyrizldi</a>
+<body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header>
+        <div class="nav-inner">
+            <a href="../index.html" class="logo">dikyriz.dev</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#about"><span class="nav-num">01.</span>About</a></li>
+                <li><a href="./projects.html"><span class="nav-num">02.</span>Projects</a></li>
+                <li><a href="../index.html#contact"><span class="nav-num">03.</span>Contact</a></li>
+            </ul>
         </div>
     </header>
-    <main class="mx-4">
-        <section class="container-fluid">
-            <div class="project">
-                <h1 class="h6">My Project</h1>
-                <div class="card-container d-flex flex-column gy-3 gy-lg-4 row row-cols-lg-2 px-3 flex-lg-row">
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/web-1.png" alt="img-project-1">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Dicoding | Web Dasar</h2>
-                                <p>Create a regional profile website from a basic web Dicoding course.</p>
-                                <span>Web Developer</span>
-                            </div>
-                            <a href="../parts/regional-profile.html" class="stretched-link"></a>
-                        </div>
-                    </div>
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/web-2.png" alt="img-project-2">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Dicoding | Web Dasar</h2>
-                                <p>Create a website profile to complete the final project on the Dicoding course.</p>
-                                <span>Web Developer</span>
-                            </div>
-                            <a href="../parts/company-profile.html" class="stretched-link"></a>
-                        </div>
-                    </div>
-                    <div class="col-lg col-sm-12">
 
+    <main>
+        <section class="project-detail">
+            <p class="overline">02. Archive</p>
+            <h1>All Projects</h1>
+            <p class="archive-intro">A collection of IoT systems and web applications I've designed and built.</p>
 
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/iot-1.jpg" alt="img-project-3">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Monitoring dan Kontrol Kolam Renang dengan Android</h2>
-                                <p>Create a swimming pool monitoring system to determine water quality and...</p>
-                                <span>IoT Engineer</span>
-                            </div>
-                            <a href="../parts/monitoring-pool.html" class="stretched-link"></a>
-                        </div>
+            <div class="archive-grid">
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/monitoring-pool.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                     </div>
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/iot-2.jpg" alt="img-project-4">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Kontrol Lampu dengan Google Assistant</h2>
-                                <p>Create a light on and off system that can be controlled via the Google Assistant.</p>
-                                <span>IoT Engineer</span>
-                            </div>
-                            <a href="../parts/google-assistant.html" class="stretched-link"></a>
-                        </div>
+                    <h3 class="archive-title"><a href="../parts/monitoring-pool.html" class="stretched-link">Swimming Pool Monitoring &amp; Control</a></h3>
+                    <p class="archive-desc">ESP32-based system that monitors pool water quality — turbidity and pH — and controls the water pumps through an Android app.</p>
+                    <ul class="archive-tech"><li>ESP32</li><li>Arduino / C</li><li>Kotlin</li><li>MQTT</li></ul>
+                    <span class="archive-cat">IoT Engineer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/google-assistant.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                     </div>
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/img-null.png" alt="img-project-5">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Monitoring Tekanan Air dengan Telegram</h2>
-                                <p>Create a water pressure monitoring system in pipes with Telegram.</p>
-                                <span>IoT Engineer</span>
-                            </div>
-                            <a href="../parts/tekanan-tele.html" class="stretched-link"></a>
-                        </div>
+                    <h3 class="archive-title"><a href="../parts/google-assistant.html" class="stretched-link">Voice-Controlled Lamp with Google Assistant</a></h3>
+                    <p class="archive-desc">Smart-lamp system on ESP8266 that switches lights on and off through Google Assistant voice commands, with time sync via NTP.</p>
+                    <ul class="archive-tech"><li>ESP8266</li><li>Arduino / C</li><li>IFTTT</li><li>NTP</li></ul>
+                    <span class="archive-cat">IoT Engineer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/tekanan-tele.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                     </div>
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/web-4.png" alt="img-project-6">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>BWA | Web Booking Staycation</h2>
-                                <p>Make a staycation web booking from the BWA course.</p>
-                                <span>Web Developer</span>
-                            </div>
-                            <a href="../parts/bwa-staycation.html" class="stretched-link"></a>
-                        </div>
+                    <h3 class="archive-title"><a href="../parts/tekanan-tele.html" class="stretched-link">Water Pressure Monitoring with Telegram</a></h3>
+                    <p class="archive-desc">Water pressure monitoring system for pipes that reports readings and alerts through a Telegram bot.</p>
+                    <ul class="archive-tech"><li>ESP8266</li><li>Arduino / C</li><li>Telegram Bot</li></ul>
+                    <span class="archive-cat">IoT Engineer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/bwa-staycation.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                     </div>
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/img-null.png" alt="img-project-7">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Kontrol Rolling Door menggunakan E-KTP</h2>
-                                <p>Create an automatic rolling door opening and closing system using an E-KTP.</p>
-                                <span>IoT Engineer</span>
-                            </div>
-                            <a href="../parts/rolling-door.html" class="stretched-link"></a>
-                        </div>
+                    <h3 class="archive-title"><a href="../parts/bwa-staycation.html" class="stretched-link">Staycation Booking Web App</a></h3>
+                    <p class="archive-desc">Hotel and staycation booking web application with Redux state management and a responsive interface.</p>
+                    <ul class="archive-tech"><li>Vite</li><li>React</li><li>Redux</li><li>Bootstrap 5</li></ul>
+                    <span class="archive-cat">Web Developer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/school-profile.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                     </div>
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/img-null.png" alt="img-project-8">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Kontrol Pintu Geser Otomatis dengan Sensor Suara dan Gesture</h2>
-                                <p>Create an automatic sliding door opening and closing system using sound and gesture sensors.</p>
-                                <span>IoT Engineer</span>
-                            </div>
-                            <a href="../parts/door-gesture.html" class="stretched-link"></a>
-                        </div>
+                    <h3 class="archive-title"><a href="../parts/school-profile.html" class="stretched-link">School Company Profile</a></h3>
+                    <p class="archive-desc">Live company-profile website for SMA Islam Sidoarjo, built responsive and deployed to production.</p>
+                    <ul class="archive-tech"><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul>
+                    <span class="archive-cat">Web Developer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/resto.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                     </div>
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/img-null.png" alt="img-project-9">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Sistem Deteksi Keamanan Ruangan menggunakan sensor PIR dan RFID</h2>
-                                <p>Creating a security system in a room using PIR and RFID sensors.</p>
-                                <span>IoT Engineer</span>
-                            </div>
-                            <a href="../parts/pir-rfid.html" class="stretched-link"></a>
-                        </div>
+                    <h3 class="archive-title"><a href="../parts/resto.html" class="stretched-link">Resto Website</a></h3>
+                    <p class="archive-desc">Restaurant website built with utility-first Tailwind CSS.</p>
+                    <ul class="archive-tech"><li>HTML</li><li>CSS</li><li>Tailwind</li></ul>
+                    <span class="archive-cat">Web Developer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/rolling-door.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                     </div>
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0">
-                            <div class="img">
-                                <img src="../assets/image/img-null.png" alt="img-project-10">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Wall Interactive</h2>
-                                <p>Create an interactive wall system using touch sensors and WS2812B LEDs.</p>
-                                <span>IoT Engineer</span>
-                            </div>
-                            <a href="../parts/wall-interactive.html" class="stretched-link"></a>
-                        </div>
+                    <h3 class="archive-title"><a href="../parts/rolling-door.html" class="stretched-link">Rolling Door Control with E-KTP</a></h3>
+                    <p class="archive-desc">Automatic rolling door opening and closing system using E-KTP (national ID card) for access control.</p>
+                    <ul class="archive-tech"><li>Arduino UNO</li><li>Arduino / C</li></ul>
+                    <span class="archive-cat">IoT Engineer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/door-gesture.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                     </div>
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/img-null.png" alt="img-project-11">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Pintu Geser Otomatis menggunakan RFID</h2>
-                                <p>Making an automatic sliding door system using RFID.</p>
-                                <span>IoT Engineer</span>
-                            </div>
-                            <a href="../parts/door-rfid.html" class="stretched-link"></a>
-                        </div>
+                    <h3 class="archive-title"><a href="../parts/door-gesture.html" class="stretched-link">Sliding Door with Sound &amp; Gesture Sensors</a></h3>
+                    <p class="archive-desc">Automatic sliding door system triggered by sound and gesture sensors.</p>
+                    <ul class="archive-tech"><li>Arduino UNO</li><li>Arduino / C</li></ul>
+                    <span class="archive-cat">IoT Engineer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/pir-rfid.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                     </div>
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/web-3.png" alt="img-project-12">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Company Profile Sekolah</h2>
-                                <p>Create a profile website for Sidoarjo Islamic High School.</p>
-                                <span class="">Web Developer</span>
-                            </div>
-                            <a href="../parts/school-profile.html" class="stretched-link"></a>
-                        </div>
+                    <h3 class="archive-title"><a href="../parts/pir-rfid.html" class="stretched-link">Room Security System with PIR &amp; RFID</a></h3>
+                    <p class="archive-desc">Room security system combining PIR motion detection and RFID access, with Telegram notifications.</p>
+                    <ul class="archive-tech"><li>Arduino UNO</li><li>Arduino / C</li><li>Telegram Bot</li></ul>
+                    <span class="archive-cat">IoT Engineer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/wall-interactive.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                     </div>
-                    <div class="col-lg col-sm-12">
-                        <div class="card border-0 ">
-                            <div class="img">
-                                <img src="../assets/image/web-5.png" alt="img-project-13">
-                            </div>
-                            <div class="description mt-1">
-                                <h2>Website Resto</h2>
-                                <p>Create a web using Utility-First Tailwind CSS.</p>
-                                <span class="">Web Developer</span>
-                            </div>
-                            <a href="../parts/resto.html" class="stretched-link"></a>
-                        </div>
+                    <h3 class="archive-title"><a href="../parts/wall-interactive.html" class="stretched-link">Interactive Wall</a></h3>
+                    <p class="archive-desc">Interactive wall installation using touch sensors and WS2812B LEDs over RS485.</p>
+                    <ul class="archive-tech"><li>Arduino Nano</li><li>Arduino / C</li><li>RS485</li></ul>
+                    <span class="archive-cat">IoT Engineer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/door-rfid.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                     </div>
+                    <h3 class="archive-title"><a href="../parts/door-rfid.html" class="stretched-link">Automatic Sliding Door with RFID</a></h3>
+                    <p class="archive-desc">Automatic sliding door system with RFID-based access control.</p>
+                    <ul class="archive-tech"><li>Arduino UNO</li><li>Arduino / C</li></ul>
+                    <span class="archive-cat">IoT Engineer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/regional-profile.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                    </div>
+                    <h3 class="archive-title"><a href="../parts/regional-profile.html" class="stretched-link">Regional Profile Website</a></h3>
+                    <p class="archive-desc">Regional profile website built during the Dicoding basic web development course.</p>
+                    <ul class="archive-tech"><li>HTML5</li><li>CSS</li><li>Flexbox</li></ul>
+                    <span class="archive-cat">Web Developer</span>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-top">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <a href="../parts/company-profile.html" class="archive-ext" aria-label="View details"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                    </div>
+                    <h3 class="archive-title"><a href="../parts/company-profile.html" class="stretched-link">Company Profile Website</a></h3>
+                    <p class="archive-desc">Company profile website as the final project of the Dicoding web course.</p>
+                    <ul class="archive-tech"><li>HTML5</li><li>CSS</li><li>Flexbox</li></ul>
+                    <span class="archive-cat">Web Developer</span>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="mt-4 px-2">
-        <div class="d-flex mb-5">
 
+    <footer>
+        <div class="footer-cols">
             <div class="social">
                 <h6>Socials</h6>
                 <ul>
-                    <li>
-
-                        <a href="https://github.com/dikyriz" target="_blank">Github</a>
-                    </li>
-                    <li>
-
-                        <a href="https://www.linkedin.com/in/achmaddickyrizhaldi/" target="_blank">Linkedin</a>
-                    </li>
+                    <li><a href="https://github.com/dikyriz" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/achmaddickyrizhaldi/" target="_blank">LinkedIn</a></li>
                 </ul>
             </div>
-            <div class="links ms-4">
+            <div class="links">
                 <h6>Links</h6>
                 <ul>
-                    <li>
-                        <a href="./about.html">About</a>
-
-                    </li>
-                    <li>
-                        <a href="./projects.html">Projects</a>
-
-                    </li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
                 </ul>
             </div>
         </div>
-        <p class="my-3">Created by <span>dikyrizldi</span></p>
+        <p>Designed &amp; built by <span>Achmad Dicky Rizhaldi</span></p>
     </footer>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
