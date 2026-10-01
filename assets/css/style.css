@@ -649,6 +649,109 @@ section .about p {
     color: var(--accent);
 }
 
+/* ============ PROJECT ARCHIVE GRID ============ */
+.archive-intro {
+    font-size: 16px;
+    margin: -24px 0 40px 0;
+    max-width: 640px;
+}
+
+.archive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.archive-card {
+    position: relative;
+    background: var(--light-navy);
+    border: 1px solid rgba(100, 255, 218, 0.06);
+    border-radius: 8px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.archive-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 40px -15px rgba(2, 12, 27, 0.8);
+}
+
+.archive-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.archive-ext {
+    color: var(--light-slate);
+    z-index: 2;
+}
+
+.archive-ext:hover {
+    color: var(--accent);
+}
+
+.archive-title {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0 0 12px 0;
+}
+
+.archive-title a {
+    color: var(--lightest-slate);
+}
+
+.archive-card:hover .archive-title a {
+    color: var(--accent);
+}
+
+.archive-desc {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--slate);
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+.archive-tech {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+}
+
+.archive-tech li {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--light-slate);
+}
+
+.archive-cat {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+}
+
+@media (max-width: 992px) {
+    .archive-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .archive-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
     .nav-links li:not(:last-child) {
