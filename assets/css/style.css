@@ -752,6 +752,86 @@ section .about p {
     }
 }
 
+/* ============ EFFECTS (cursor glow, reveal, nav, scrollbar) ============ */
+.cursor-glow {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    pointer-events: none;
+    background: radial-gradient(600px circle at 50% 50%, rgba(29, 78, 216, 0.15), transparent 80%);
+}
+
+header {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+header.scrolled {
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+}
+
+header.nav-hidden {
+    transform: translateY(-100%);
+}
+
+.nav-links a.active {
+    color: var(--accent);
+}
+
+/* scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* hero entrance */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--navy);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--lightest-navy);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--slate);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .fade-up {
+        opacity: 1;
+        transform: none;
+        animation: none;
+        transition: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
     .nav-links li:not(:last-child) {

@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
     <header>
         <div class="nav-inner">
             <a href="index.html" class="logo">dikyriz.dev</a>
@@ -29,16 +30,16 @@
     <main>
         <!-- HERO -->
         <section class="hero">
-            <p class="hero-greeting">Hi, my name is</p>
-            <h1 class="hero-name">Achmad Dicky Rizhaldi.</h1>
-            <h2 class="hero-tagline">IoT Engineer &amp; Front-End Developer.</h2>
-            <p class="hero-desc">
+            <p class="hero-greeting fade-up" style="animation-delay:0.1s">Hi, my name is</p>
+            <h1 class="hero-name fade-up" style="animation-delay:0.2s">Achmad Dicky Rizhaldi.</h1>
+            <h2 class="hero-tagline fade-up" style="animation-delay:0.3s">IoT Engineer &amp; Front-End Developer.</h2>
+            <p class="hero-desc fade-up" style="animation-delay:0.4s">
                 I'm a developer from Sidoarjo, Indonesia, specializing in
                 <strong>IoT systems</strong> and <strong>front-end web development</strong>.
                 I build connected devices with ESP32/Arduino and modern web apps
                 with React — from sensor to screen.
             </p>
-            <div class="hero-cta">
+            <div class="hero-cta fade-up" style="animation-delay:0.55s">
                 <a href="#projects" class="btn">Check out my projects</a>
                 <a href="#contact" class="btn btn-sm" style="align-self:center">Get in touch</a>
             </div>
@@ -211,6 +212,7 @@
         </div>
         <p>Designed &amp; built by <span>Achmad Dicky Rizhaldi</span></p>
     </footer>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
